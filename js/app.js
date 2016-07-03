@@ -1,3 +1,15 @@
-var something = require("babel!./content.js");
+import $ from 'jquery';
+import Backbone from 'backbone';
+import React from 'react';
 
-something();
+
+$(function() {
+
+var Context = require("babel!./context.js");
+
+window.context = new Context();
+
+});
+
+//set up  context
+
